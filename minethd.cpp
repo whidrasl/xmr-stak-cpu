@@ -76,8 +76,8 @@ telemetry::telemetry(size_t iThd)
 		ppHashCounts[i] = new uint64_t[iBucketSize];
 		ppTimestamps[i] = new uint64_t[iBucketSize];
 		iBucketTop[i] = 0;
-		memset(ppHashCounts[0], 0, sizeof(uint64_t) * iBucketSize);
-		memset(ppTimestamps[0], 0, sizeof(uint64_t) * iBucketSize);
+		memset(ppHashCounts[i], 0, sizeof(uint64_t) * iBucketSize);
+		memset(ppTimestamps[i], 0, sizeof(uint64_t) * iBucketSize);
 	}
 }
 
